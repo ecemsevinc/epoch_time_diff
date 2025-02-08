@@ -53,8 +53,8 @@
 <h3>Kullanıcıdan Tarih Alımı:</h3>
 <p>scanf fonksiyonu yardımıyla kullanıcıdan sırasıyla yıl,ay,gün,saat,dakika ve saniye bilgisi alınır.</p>
 <p><h5>Düzeltmeler:</h5></p>
-<p>zaman.tm_year -=1900; ifadesi ile epoch kavrammında yıl 1900'den itibaren başladığı için düzeltme yapılır.</p>
-<p>zaman.tm_mon -=1; ifadesi ile epoch kavframında ay 0'dan başladığı için düzeltme yapılır.</p>
+<p>zaman.tm_year -=1900; ifadesi ile epoch kavramında yıl 1900'den itibaren başladığı için düzeltme yapılır.</p>
+<p>zaman.tm_mon -=1; ifadesi ile epoch kavramında ay 0'dan başladığı için düzeltme yapılır.</p>
 <h3>main() Fonksiyonu:</h3>
 <p>main fonksiyonu içinde kullanıcıdan iki tarih alınır ve epoch zamanına çevrilir,iki tarih arasındaki fark hesaplanarak sonuçlar ekrana yazdılır.</p>
 
