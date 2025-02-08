@@ -14,7 +14,7 @@
 <p>2.Kullanıcıdan iki farklı tarih ve saat bilgisi alınır.</p>
 <p>3.İki farklı tarih ve saat bilgisi epoch zamanına çevrilir ve aradaki fark epoch cinsinden hesaplanır.</p>
 <h3>Örnek Kullanım:</h3>
-27 Haziran 2000 tarihi 13.15.00 saatinden 8 Şubat 2025 14.30.00 tarihi ve saatine kadar geçen süreyi program yardımıyla epoch cinsinden hesaplamak istersek:
+27 Haziran 2000 tarihi 13.15.00 saatinden 8 Şubat 2025 14.30.00 tarihi ve saatine kadar geçen süreyi program yardımıyla epoch cinsinden hesaplamak istersek program çıktısı şu şekilde olacaktır:
 <p><b>Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye):
 2000 06 27 13 15 00<p>
 <p>Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye):
@@ -32,7 +32,7 @@
 <h5>time.h kütüphanesi:</h5>
 <p>Zaman ve tarih işlemleri yapabilmek amacıyla eklenmiştir.</p>
 <h3>union Yapısı:</h3>
-<p>union yapısı, aynı bellek alanını paylaşan farklı türdeki verileri tutabilen bir veri yapısıdır. Burada iki farklı türü aynı anda saklamak için kullanılıyor:</p>
+<p>union yapısı, aynı bellek alanını paylaşan farklı türdeki verileri tutabilen bir veri yapısıdır. Burada iki farklı türü aynı anda saklamak için kullanılmıştır.</p>
 <p>time_t epoch: Epoch zamanını (1970'ten itibaren saniye sayısı) tutan bir değişken.</p>
 <h3>struct tm Yapısı:</h3>
 <p>struct tm dateTimeInfo:Tarih ve saat bilgisini tutan yapıdır. struct tm, yıl,ay,gün,saat,dakika ve saniye gibi bileşenleri içerir.</p>
