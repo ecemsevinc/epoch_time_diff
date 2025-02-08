@@ -1,5 +1,5 @@
 # Epoch Cinsinden Tarih ve Saat Farkı Hesaplama Programı
-<p>Bu proje, C dilinde yazılmış,kullanıcıdan iki farklı tarih ve saat bilgisi alıp her iki tarihi epoch zamanına dönüştürerek iki tarih arasındaki farkı saniye cinsinden hesaplayan programdır. Program, tarih ve saat bilgisini struct tm ve time_t türleri ile işler. Ayrıca, union yapısı kullanarak tarih ve saat bilgisini hem epoch zamanı olarak hem de struct tm formatında saklar.İki tarih arasındaki farkı saniye cinsinden hesaplama işlevi ile gündelik hayatı kolaylaştırır.</p>
+<p>Bu proje; C dilinde yazılmış,kullanıcıdan iki farklı tarih ve saat bilgisi alıp her iki tarihi epoch zamanına dönüştürerek iki tarih arasındaki zaman farkını ve  epoch zamanı hesaplayan programdır. Program, tarih ve saat bilgisini struct tm ve time_t türleri ile işler. Ayrıca, union yapısı kullanarak tarih ve saat bilgisini hem epoch zamanı olarak hem de struct tm formatında saklar.İki farklı tarih ve saat arasındaki farkı hesaplama işlevi ile gündelik hayatı kolaylaştırır.</p>
 <p>Bu program,struct ve union kullanarak epoch hesaplaması yapmaktadır.Struct,her üye için ayrı bellek alanı ayırır ve boyutu tüm üyelerin toplamı kadardır.Union ise tüm üyelerin aynı bellek alanını paylaşmalarını sağlar ve boyutu en büyük üyenin boyutu kadardır.Struct ve union da farklı türdeki veri yapılarını bir arada tutmayı sağlayan veri yapılarıdır.</p>
 <p><b>Epoch nedir? </b></p> <p>1 Ocak 1970 00.00.00 UTC tarihinden itibaren geçen toplam saniye sayısıdır.Bilgisayarlar tarih ve saat hesaplamalarını epoch üzerinden yapar.Birkaç örnek verilecek olursa:</p>
 <p>1 Ocak 1970 00.00.01 tarihinin epoch değeri 1'dir.</p>
@@ -15,13 +15,14 @@
 <p>3.İki farklı tarih ve saat bilgisi epoch zamanına çevrilir ve aradaki fark epoch cinsinden hesaplanır.</p>
 <h3>Örnek Kullanım:</h3>
 27 Haziran 2000 tarihi 13.15.00 saatinden 8 Şubat 2025 14.30.00 tarihi ve saatine kadar geçen süreyi program yardımıyla epoch cinsinden hesaplamak istersek program çıktısı şu şekilde olacaktır:
-<p><b>Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye):
-2000 06 27 13 15 00<p>
-<p>Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye):
-2025 02 08 14 30 00<p>
-<p>Birinci Tarihin Epoch Zamani:962100900<p>
-<p>Ikinci Tarihin Epoch Zamani:1739014200<p>
-<p>Iki tarih arasindaki fark:776913300 saniye</b>
+<p><b>Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye): <br>
+2000 06 27 13 15 00 <br>
+Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye): <br>
+2025 02 08 14 30 00 <br>
+Birinci Tarihin Epoch Zamani:962100900 <br>
+Ikinci Tarihin Epoch Zamani:1739014200 <br>
+Girilen tarihler arasindaki zaman fark,:8992 gun,1 saat,15 dakika,0 saniye <br>
+Iki tarih arasindaki epoch fark:776913300 saniye</b> <br>
 </p>
 <h1>Kullanılan Bileşenler:</h1>
 <h3>Kütüphaneler</h3>
