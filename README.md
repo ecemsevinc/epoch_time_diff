@@ -9,3 +9,17 @@ Kullanıcıdan yıl,ay,gün,saat,dakika,saniye formatında tarih ve saat bilgisi
 Girilen değerler epoch zamanına dönüştürülür.
 İki tarih arasındaki farkı saniye cinsinden hesaplar ve ekrana yazdırır.
 # Kullanım
+1.Program çalıştırılır.
+2.Kullanıcıdan iki farklı tarih ve saat bilgisi alınır.
+3.İki farklı tarih ve saat bilgisi epoch zamanına çevrilir ve aradaki fark epoch cinsinden hesaplanır.
+<h3>Örnek Kullanım:</h3>
+27 Haziran 2000 tarihi 13.15.00 saatinden 8 Şubat 2025 14.30.00 tarih ve saate kadar geçen süreyi epoch cinsinden program yardımıyla hesaplamak istersek:
+<p><b>Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye):
+2000 06 27 13 15 00<p>
+<p>Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye):
+2025 02 08 14 30 00<p>
+<p>Birinci Tarihin Epoch Zamani:962100900<p>
+<p>Ikinci Tarihin Epoch Zamani:1739014200<p>
+<p>Iki tarih arasindaki fark:776913300 saniye</b>
+</p>
+
