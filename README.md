@@ -50,7 +50,7 @@ Iki tarih arasindaki epoch fark:776913300 saniye</b> <br>
 <p>mktime(),zaman bilgisini saniye cinsinden döndürür.</p>
 <h3>difftime() Fonksiyonu:</h3>
 <p>İki tarih bilgisi arasındaki farkı saniye cinsinden hesaplar.</p>
-<p>difftime(time_t t2,time_t t1) ifadesi,t2-t1 hesapkaması yapar.</p>
+<p>difftime(time_t t2,time_t t1) ifadesi,t2-t1 hesaplaması yapar.</p>
 <h3>Kullanıcıdan Tarih Alımı:</h3>
 <p>scanf fonksiyonu yardımıyla kullanıcıdan sırasıyla yıl,ay,gün,saat,dakika ve saniye bilgisi alınır.</p>
 <p><h5>Düzeltmeler:</h5></p>
