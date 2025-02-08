@@ -7,7 +7,7 @@
 <h1>Özellikler</h1>
 <p>Kullanıcıdan yıl,ay,gün,saat,dakika,saniye formatında tarih ve saat bilgisi alınır.</p>
 <p>Girilen değerler epoch zamanına dönüştürülür.</p>
-<p>İki tarih arasındaki farkı saniye cinsinden hesaplar ve ekrana yazdırır.</p>
+<p>İki tarih arasındaki zaman farkını ve epoch cinsinden farkı hesaplayarak ekrana yazdırır.</p>
 <p>Union yapısı ile tarih ve saat bilgisi hem epoch zamanı hem de struct tm formatında saklanır.</p>
 <h1>Kullanım</h1>
 <p>1.Program çalıştırılır.</p>
@@ -21,7 +21,7 @@ Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye): <br>
 2025 02 08 14 30 00 <br>
 Birinci Tarihin Epoch Zamani:962100900 <br>
 Ikinci Tarihin Epoch Zamani:1739014200 <br>
-Girilen tarihler arasindaki zaman fark,:8992 gun,1 saat,15 dakika,0 saniye <br>
+Girilen tarihler arasindaki zaman fark:8992 gun,1 saat,15 dakika,0 saniye <br>
 Iki tarih arasindaki epoch fark:776913300 saniye</b> <br>
 </p>
 <h1>Kullanılan Bileşenler:</h1>
