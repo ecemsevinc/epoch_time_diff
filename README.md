@@ -55,12 +55,12 @@
 <p><h5>Düzeltmeler:</h5></p>
 <p>zaman.tm_year -=1900; ifadesi ile epoch kavramında yıl 1900'den itibaren başladığı için düzeltme yapılır.</p>
 <p>zaman.tm_mon -=1; ifadesi ile epoch kavramında ay 0'dan başladığı için düzeltme yapılır.</p>
+<h3>main() Fonksiyonu:</h3>
+<p>main fonksiyonu içinde kullanıcıdan iki tarih alınır ve epoch zamanına çevrilir,iki tarih arasındaki fark hesaplanarak sonuçlar ekrana yazdılır.</p>
 <h1>Dosyalar:</h1>
 <p><b>README.md:</b>programın özelliklerini açıklar.</p>
 <p><b>epoch_time_diff.c:</b>kod dosyası.</p>
 <p><b>epoch_time_diff.exe:</b>program.</p>
-<h3>main() Fonksiyonu:</h3>
-<p>main fonksiyonu içinde kullanıcıdan iki tarih alınır ve epoch zamanına çevrilir,iki tarih arasındaki fark hesaplanarak sonuçlar ekrana yazdılır.</p>
 
 
 
