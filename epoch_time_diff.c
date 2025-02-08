@@ -2,27 +2,28 @@
 #include <stdlib.h>
 #include <time.h>
 
-//Epoch Nedir? 1 Ocak 1970 00.00.00 UTC tarihinden itibaren geçen toplam saniye sayısını gösterir.
-//Bilgisayarlar tarih ve saat hesaplamalarını epoch üzerindne yapar.
-/*Bu program,kullanıcıdan tarih ve saat alır.
-Epoch zamanına çevirir.
-Zaman farkını hesaplar ve ekrana yazdırır. */
+//Epoch Nedir? 1 Ocak 1970 00.00.00 UTC tarihinden itibaren geÃ§en toplam saniye sayÄ±sÄ±nÄ± gÃ¶sterir.
+//Bilgisayarlar tarih ve saat hesaplamalarÄ±nÄ± epoch Ã¼zerindne yapar.
+/*Bu program,kullanÄ±cÄ±dan tarih ve saat alÄ±r.
+Epoch zamanÄ±na Ã§evirir.
+Zaman farkÄ±nÄ± hesaplar ve ekrana yazdÄ±rÄ±r. */
 
-// Union yapısı ile tarih ve saati hem struct tm olarak hem de epoch olarak saklanır.
+// Union yapÄ±sÄ± ile tarih ve saati hem struct tm olarak hem de epoch olarak saklanÄ±r.
 union DateTime{
-	time_t epoch; //epoch zamanı
+	time_t epoch; //epoch zamanÄ±
 	struct tm dateTimeInfo; //tarih ve saat bilgisi
 };
 
-//Kullanıcıdan tarih alıp epoch'a çeviren fonksiyon:
+//KullanÄ±cÄ±dan tarih alÄ±p epoch'a Ã§eviren fonksiyon:
 time_t getTimeValue(){
-	union DateTime dateTime; //zaman yapısını sıfırlar.çöp bellek değerinden kaçınıp temiz başlangıç yapmak amacıyla.
+	union DateTime dateTime; ////union nesnesi oluÅŸturulur.
+
 
 	printf("Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye): \n");
 	scanf("%d %d %d %d %d %d",&dateTime.dateTimeInfo.tm_year,  &dateTime.dateTimeInfo.tm_mon,  &dateTime.dateTimeInfo.tm_mday,    &dateTime.dateTimeInfo.tm_hour, &dateTime.dateTimeInfo.tm_min,  &dateTime.dateTimeInfo.tm_sec);
-	 dateTime.dateTimeInfo.tm_year -=1900; //yıl 1900'den başladığı için düzeltiliyor.
-	 dateTime.dateTimeInfo.tm_mon -= 1; //Ay 0'dan başldığı için düzeltiliyor.
-	return mktime(&dateTime.dateTimeInfo); //epoch zamanına çevriliyor.
+	 dateTime.dateTimeInfo.tm_year -=1900; //yÄ±l 1900'den baÅŸladÄ±ÄŸÄ± iÃ§in dÃ¼zeltiliyor.
+	 dateTime.dateTimeInfo.tm_mon -= 1; //Ay 0'dan baÅŸldÄ±ÄŸÄ± iÃ§in dÃ¼zeltiliyor.
+	return mktime(&dateTime.dateTimeInfo); //epoch zamanÄ±na Ã§evriliyor.
 }
 
 
