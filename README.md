@@ -1,6 +1,6 @@
 # Tarih ve Saat Epoch Hesaplama Programı
 <p>Bu proje, C dilinde yazılmış,kullanıcıdan iki farklı tarih ve saat bilgisi alıp her iki tarihi epoch zamanına dönüştürerek iki tarih arasındaki farkı saniye cinsinden hesaplayan programdır. Program, tarih ve saat bilgisini struct tm ve time_t türleri ile işler. Ayrıca, union yapısı kullanarak tarih ve saat bilgisini hem epoch zamanı olarak hem de struct tm formatında saklar.İki tarih arasındaki farkı saniye cinsinden hesaplama işlevi ile gündelik hayatı kolaylaştırır.</p>
-<p>Struct,her üye için ayrı bellek alanı ayırır ve boyutu tüm üyelerin toplamı kadardır.Union ise tüm üyelerin aynı bellek alanını paylaşmalarını sağlar ve boyutu en büyük üyenin boyutu kadardır.</p>
+<p>Bu program,struct ve union kullanarak epoch hesaplaması yapmaktadır.Struct,her üye için ayrı bellek alanı ayırır ve boyutu tüm üyelerin toplamı kadardır.Union ise tüm üyelerin aynı bellek alanını paylaşmalarını sağlar ve boyutu en büyük üyenin boyutu kadardır.Struct ve union da farklı türdeki veri yapılarını bir arada tutmayı sağlayan veri yapılarıdır.</p>
 <p><b>Epoch nedir? </b></p> <p>1 Ocak 1970 00.00.00 UTC tarihinden itibaren geçen toplam saniye sayısıdır.Bilgisayarlar tarih ve saat hesaplamalarını epoch üzerinden yapar.Birkaç örnek verilecek olursa:</p>
 <p>1 Ocak 1970 00.00.01 tarihinin epoch değeri 1'dir.</p>
 <p>2 Ocak 1970 00.00.00 tarihinin epoch değeri ise 86400'dür.(1 gün=24 saat,1 saat=60 dakika,1 dakika=60 saniye olduğundan dolayı 24*60*60 değerinden sonuca ulaşılır.)</p>
