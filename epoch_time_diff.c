@@ -16,7 +16,7 @@ union DateTime{
 
 //Kullanıcıdan tarih alıp epoch'a çeviren fonksiyon:
 time_t getTimeValue(){
-	union DateTime dateTime; ////union nesnesi oluşturulur.
+	union DateTime dateTime; //union nesnesi oluşturulur.
 
 
 	printf("Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye): \n");
