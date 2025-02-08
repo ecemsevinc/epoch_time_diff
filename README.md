@@ -12,9 +12,12 @@
 <p>Genel amaçlı yardımcı fonksiyonlar içerir.</p>
 <h5>time.h kütüphanesi:</h5>
 <p>Zaman ve tarih işlemleri yapabilmek amacıyla eklenmiştir.</p>
+<h3>union Yapısı:</h3>
+<p>union yapısı, aynı bellek alanını paylaşan farklı türdeki verileri tutabilen bir veri yapısıdır. Burada iki farklı türü aynı anda saklamak için kullanılıyor:</p>
+<p>time_t epoch: Epoch zamanını (1970'ten itibaren saniye sayısı) tutan bir değişken.</p>
 <h3>struct tm Yapısı:</h3>
-<p>time.h kütüphanesindne gelen zaman bilgisi tutan özel bir yapıdır.</p>
-<p>{0}yapısı ile belleğin sıfırılanması sağlanır ve bellekte çöp veri kalması önlenir.</p>
+<p>struct tm dateTimeInfo:Tarih ve saat bilgisini tutan yapıdır. struct tm, yıl,ay,gün,saat,dakika ve saniye gibi bileşenleri içerir.</p>
+<p>union DateTime kullanarak hem epoch zamanını hem de tarih bilgilerini saklamak mümkündür. Her iki bileşen aynı bellek alanını paylaşır, yani bir anda yalnızca bir değer saklanabilir.</p>
 <h6>İçindeki Yapılar:</h6>
 <p>tm_year:yılı ifade eder.1900'den itibaren hesaplanır.</p>
 <p>tm_mon:ayı gösterir.0 ile 11 arasındadır.Ocak ayı,0.ay olarak kabul edilir.</p>
