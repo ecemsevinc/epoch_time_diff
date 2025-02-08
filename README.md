@@ -14,7 +14,7 @@
 <p>2.Kullanıcıdan iki farklı tarih ve saat bilgisi alınır.</p>
 <p>3.İki farklı tarih ve saat bilgisi epoch zamanına çevrilir ve aradaki fark epoch cinsinden hesaplanır.</p>
 <h3>Örnek Kullanım:</h3>
-27 Haziran 2000 tarihi 13.15.00 saatinden 8 Şubat 2025 14.30.00 tarih ve saate kadar geçen süreyi epoch cinsinden program yardımıyla hesaplamak istersek:
+27 Haziran 2000 tarihi 13.15.00 saatinden 8 Şubat 2025 14.30.00 tarihi ve saatine kadar geçen süreyi program yardımıyla epoch cinsinden hesaplamak istersek:
 <p><b>Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye):
 2000 06 27 13 15 00<p>
 <p>Tarih ve saat giriniz (Yil Ay Gun Saat Dakika Saniye):
