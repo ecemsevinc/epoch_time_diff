@@ -1,4 +1,4 @@
-# epoch_time_diff
+# Tarih ve Saat Epoch Hesaplama Programı
 struct ve union kullanarak kullanıcının girdiği iki farklı tarih ve saat arasındaki zaman farkını hesaplayan bir c programı.Bu program:
 Kullanıcıdan iki farklı tarih ve saat bilgisi alır.
 Bu bilgileri epoch zamanına (Unix Time) çevirir.
